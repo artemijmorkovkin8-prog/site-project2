@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Пиксель</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Пиксель</a>
+      <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Контакты</h1>
+    <p>Адрес: г. Москва, ул. Дизайнерская, 10</p>
+    <p>Телефон: +7 (999) 123-45-67</p>
+    <p>E-mail: info@pixel-studio.ru</p>
+
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="name-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message"></textarea>
+        <span class="error" id="message-error"></span>
+      </div>
+      <button type="submit">Отправить</button>
+      <p class="success hidden" id="success-message">Сообщение отправлено!</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Студия «Пиксель». Все права защищены.</p>
+      <p>г. Москва, ул. Дизайнерская, 10 | +7 (999) 123-45-67 | info@pixel-studio.ru</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/form.js" defer></script>
+</body>
+</html>
